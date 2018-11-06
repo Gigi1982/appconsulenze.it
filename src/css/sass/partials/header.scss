@@ -1,0 +1,35 @@
+.app-navbar-container {
+    .app-logo {
+        width: 228px;
+        height: 83px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        //overflow: hidden;
+        > img {
+            @include cover-media;
+        }
+    }
+    .app-full-logo {
+        margin-bottom: 42px;
+    }
+}
+
+.main-header {
+    padding-top: 45px;
+    .navbar-nav {
+        > li {
+            &.current-menu-item {
+                > a {
+                    color:$primary;
+                    font-weight: 700;
+                    text-decoration: underline;
+                }
+            }
+            > a {
+                text-transform: uppercase;
+                color:$body;
+            }
+        }
+    }
+}

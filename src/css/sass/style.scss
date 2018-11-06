@@ -1,0 +1,28 @@
+/**
+ * styles.scss
+ * ---
+ * Main `sass` file. Import here `sass` files
+ */
+
+
+@import "modules/variables";
+@import "modules/mixins";
+
+@import "vendors/bootstrap/bootstrap";
+@import "../../bower_components/lightgallery/src/sass/lightgallery";
+@import "../../bower_components/air-datepicker/src/sass/datepicker";
+@import "../../bower_components/air-datepicker/src/sass/cell";
+@import "../../bower_components/air-datepicker/src/sass/navigation";
+
+// Modules - example: colors, fonts, buttons, forms, ecc.
+@import "modules/fonts";
+
+// Partials - example: wrapper, header, nav, footer
+@import "partials/header";
+@import "partials/footer";
+
+// Widgets - example: canvas, slider-swiper, ecc.
+
+// Pages - single pages scss
+@import "pages/homepage";
+@import "pages/commons";

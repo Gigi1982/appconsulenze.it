@@ -1,0 +1,8 @@
+.app-footer {
+    background-color: $primary;
+    color: #fff;
+    padding:44px 0;
+    .footer-copyright {
+        @extend .smaller;
+    }
+}
