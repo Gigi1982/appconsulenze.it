@@ -10,6 +10,12 @@
         
         var scrollToOffset = 110;
         
+        var scene = new ScrollMagic.Scene({
+            offset: 198,
+        })
+        .setClassToggle("body", "header--fixed")
+        .addTo(controller);
+        
         
         $(".js-scroll-to").bind("click", function(e){
             e.preventDefault();

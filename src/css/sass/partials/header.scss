@@ -1,7 +1,7 @@
 .app-navbar-container {
     .app-logo {
-        width: 228px;
-        height: 83px;
+        width: 258px;
+        height: 93px;
         display: block;
         text-align: center;
         margin: 0 auto;
@@ -15,8 +15,41 @@
     }
 }
 
+.header--fixed {
+    margin-top:248px;
+    .app-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navbar-nav {
+            flex: 1;
+        }
+    }
+    .main-header {
+        animation: menuTranslate 200ms both;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        background: #fff;
+        padding:25px 0;
+        .app-full-logo {
+            opacity: 0;
+            display: none;
+        }
+        .app-logo-compressed {
+            opacity: 1;
+            display: block;
+            padding-right: 50px;
+        }
+    }
+}
+
 .main-header {
     padding-top: 45px;
+    .app-logo-compressed {
+        display: none;
+    }
     .navbar-nav {
         > li {
             &.current-menu-item {
@@ -32,4 +65,16 @@
             }
         }
     }
+}
+
+@keyframes menuTranslate {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }

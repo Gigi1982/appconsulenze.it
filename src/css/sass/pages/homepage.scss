@@ -1,0 +1,47 @@
+.app-home {
+    .app-home-canvas {
+        background-size: cover;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 50px;
+        position: relative;
+        &:after {
+            content: "";
+            @include cover-el;    
+            @include gradient-overlay;            
+        }
+        .app-home-canvinner {
+            @include cover-el;
+            display: flex;
+            z-index: 1;
+            .container {
+                display: flex;
+                flex: 1;
+            }
+            .app-home-claim {
+                color: #fff;
+                margin-bottom: 76px;
+                
+            }
+        }
+    }
+    .app-two-modules {
+        .app-module-item {
+            .app-module-itemheader {
+                position: relative;
+                > img {
+                    @include cover-media;    
+                }
+                &:after {
+                    content: "";
+                    @include cover-el;    
+                    @include gradient-overlay; 
+                }
+            }
+            .app-module-itemcontent {
+                margin-top: 20px;
+            }
+        }
+    }
+}

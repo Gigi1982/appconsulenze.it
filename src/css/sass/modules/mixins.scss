@@ -30,11 +30,12 @@
     object-fit: cover;
 }
 
-@mixin gradient-overlay {
-    background-image: linear-gradient(166deg, #2518E8 0%, #AB3194 100%);
+@mixin gradient-overlay {    
+    background-image: linear-gradient(-226deg, rgba(89,97,209,0.25) 0%, #5961D1 100%);
 }
 
 @mixin card-shadow {
     background: #FFFFFF;
     box-shadow: 0 2px 34px 0 rgba(0,0,0,0.09);
 }
+
