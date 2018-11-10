@@ -3,8 +3,15 @@
 				<div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="footer-copyright text-center">
+                            <div class="footer-copyright text-center d-flex justify-content-center">
                                 <span>© App Consulenze 2018 - Via Torino 18 - Alessandria (AL) - Tel 0131 112345 </span>
+                                <nav class="footer-icons pl-3">
+                                    <ul class="list-unstyled d-flex align-items-center">
+                                        <li class="pr-2"><a href="#" class="social-icon"><i class="ico ico-facebook"></i></a></li>
+                                        <li><a href="#" class="social-icon"><i class="ico ico-mail"></i></a></li>
+                                    </ul>
+                                    
+                                </nav>
                             </div>
                         </div>
                     </div>

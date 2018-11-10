@@ -4,7 +4,7 @@
         height: 500px;
         background-repeat: no-repeat;
         background-position: center;
-        margin-top: 50px;
+        margin-top: 40px;
         position: relative;
         &:after {
             content: "";
@@ -26,6 +26,9 @@
             }
         }
     }
+    .app-home-claim-buttons {
+        margin-top: 40px;
+    }
     .app-two-modules {
         .app-module-item {
             .app-module-itemheader {
@@ -42,6 +45,19 @@
             .app-module-itemcontent {
                 margin-top: 20px;
             }
+        }
+    }
+    .app-cta-block {
+        min-height: 380px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        > .container {
+            display: flex;
+        }
+        .app-cta-inner {
+            text-align: center;
+            color:#fff; 
         }
     }
 }

@@ -39,6 +39,24 @@ Con l’intento di trasmettere l’importanza del benessere e della sicurezza de
             </div>
         </div>
     </section>
+    <section class="app-cta-block" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/main-pattern.jpg');">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 offset-md-3">
+                    <div class="app-cta-inner">
+                        <h2>Privacy</h2>
+                        <div class="app-cta-content">
+                            <p>I nostri consulenti esperti affiancheranno il titolare nella gestione delle problematiche del trattamento dei dati personali in tal modo da garantire che un soggetto qualificato...</p>
+                        </div>
+                        <div class="app-home-claim-buttons">
+                            <a href="#" class="btn btn-outline-light btn-sm">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
 </section>
 
 

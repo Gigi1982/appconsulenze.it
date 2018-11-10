@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="ico-facebook" unicode="&#xe800;" d="M375 475l188 0 0-187-188 0 0-438-187 0 0 438-188 0 0 187 188 0 0 78c0 75 23 169 69 220 47 51 105 77 175 77l131 0 0-187-132 0c-31 0-56-26-56-57l0-131z" horiz-adv-x="563" />
+
+<glyph glyph-name="ico-mail" unicode="&#xe801;" d="M1036 850l-872 0c-91 0-164-75-164-167l0-666c0-92 73-167 164-167l872 0c91 0 164 75 164 167l0 666c0 92-73 167-164 167z m0-111c7 0 13-1 18-3l-454-370-454 370c6 2 11 3 18 3l872 0z m0-778l-872 0c-30 0-55 25-55 56l0 606 457-372c10-8 22-12 34-12 12 0 24 4 34 12l457 372 0-606c0-31-24-56-55-56z" horiz-adv-x="1200" />
+</font>
+</defs>
+</svg>

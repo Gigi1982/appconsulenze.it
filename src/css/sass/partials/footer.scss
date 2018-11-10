@@ -4,5 +4,10 @@
     padding:44px 0;
     .footer-copyright {
         @extend .smaller;
+        .footer-icons {
+            .social-icon {
+                color:#fff; 
+            }
+        }
     }
 }
