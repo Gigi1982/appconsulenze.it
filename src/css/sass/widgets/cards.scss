@@ -1,0 +1,17 @@
+.card-header {
+    background-color: transparent;
+    @include gradient-overlay;
+    > h5 {
+        .btn-link {
+            color: #fff;
+            text-transform: none;
+            font-weight: 600;
+            @extend .h5;
+            @include has-decoration(#fff);
+            padding: 0;
+            &:hover, &:active, &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}

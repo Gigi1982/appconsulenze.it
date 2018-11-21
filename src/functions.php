@@ -115,6 +115,9 @@ function appconsulenze_header_scripts()
         /*// Jquery date
         wp_register_script('jquery-date', get_template_directory_uri() . '/js/lib/dateFormat.min.js', array(), '1.0.0', true);
         wp_enqueue_script('jquery-date'); // Enqueue it!*/
+        
+        wp_register_script('bootstrap', get_template_directory_uri() . '/js/lib/bootstrap.min.js', array(), '4.0', true); // Modernizr
+        wp_enqueue_script('bootstrap'); // Enqueue it!
 
         wp_register_script('appconsulenzescripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('appconsulenzescripts'); // Enqueue it!
@@ -411,6 +414,23 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 // Shortcodes
 add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
+
+//get excerpt by id
+function get_excerpt_by_id($post_id){
+    $the_post = get_post($post_id); //Gets post ID
+    $the_excerpt = ($the_post ? $the_post->post_content : null); //Gets post_content to be used as a basis for the excerpt
+    $excerpt_length = 35; //Sets excerpt length by word count
+    $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
+    $words = explode(' ', $the_excerpt, $excerpt_length + 1);
+
+    if(count($words) > $excerpt_length) :
+        array_pop($words);
+        array_push($words, '…');
+        $the_excerpt = implode(' ', $words);
+    endif;
+
+    return $the_excerpt;
+}
 
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]

@@ -1,63 +1,78 @@
-.app-home {
-    .app-home-canvas {
-        background-size: cover;
-        height: 500px;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-top: 40px;
+.app-home-canvas {
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px;
+    position: relative;
+    &:after {
+        content: "";
+        @include cover-el;    
+        @include gradient-overlay;            
+    }
+    .app-home-canvinner {
+        @include cover-el;
+        display: flex;
+        z-index: 1;
+        .container {
+            display: flex;
+            flex: 1;
+        }
+        .app-home-claim {
+            color: #fff;
+            margin-bottom: 76px;
+
+        }
+    }
+}
+.app-home-claim-buttons {
+    margin-top: 40px;
+}
+.app-two-modules {
+    .app-module-item {
+        .app-module-itemheader {
+            position: relative;
+            > img {
+                @include cover-media;    
+            }
+            &:after {
+                content: "";
+                @include cover-el;    
+                @include gradient-overlay; 
+            }
+        }
+        .app-module-itemcontent {
+            margin-top: 20px;
+        }
+    }
+}
+.app-cta-block {
+    min-height: 380px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    > .container {
+        display: flex;
+    }
+    .app-cta-inner {
+        text-align: center;
+        color:#fff; 
+    }
+}
+.app-full-column {
+    .app-module-itemimg {
         position: relative;
+        margin-bottom: 30px;
+        > img {
+            @include cover-media;    
+        }
         &:after {
             content: "";
             @include cover-el;    
-            @include gradient-overlay;            
-        }
-        .app-home-canvinner {
-            @include cover-el;
-            display: flex;
-            z-index: 1;
-            .container {
-                display: flex;
-                flex: 1;
-            }
-            .app-home-claim {
-                color: #fff;
-                margin-bottom: 76px;
-                
-            }
+            @include gradient-overlay; 
         }
     }
-    .app-home-claim-buttons {
-        margin-top: 40px;
-    }
-    .app-two-modules {
-        .app-module-item {
-            .app-module-itemheader {
-                position: relative;
-                > img {
-                    @include cover-media;    
-                }
-                &:after {
-                    content: "";
-                    @include cover-el;    
-                    @include gradient-overlay; 
-                }
-            }
-            .app-module-itemcontent {
-                margin-top: 20px;
-            }
-        }
-    }
-    .app-cta-block {
-        min-height: 380px;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        > .container {
-            display: flex;
-        }
-        .app-cta-inner {
-            text-align: center;
-            color:#fff; 
-        }
+    .app-module-btn {
+        margin-top: 30px;
     }
 }

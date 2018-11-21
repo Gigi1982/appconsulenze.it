@@ -22,9 +22,14 @@
 // Partials - example: wrapper, header, nav, footer
 @import "partials/header";
 @import "partials/footer";
+@import "partials/header-internal";
 
 // Widgets - example: canvas, slider-swiper, ecc.
+
+@import "widgets/cards";
 
 // Pages - single pages scss
 @import "pages/homepage";
 @import "pages/commons";
+
+

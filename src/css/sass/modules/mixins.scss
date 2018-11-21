@@ -39,3 +39,17 @@
     box-shadow: 0 2px 34px 0 rgba(0,0,0,0.09);
 }
 
+@mixin has-decoration($color) {
+    position: relative;
+    display: inline-block;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width:50%;
+        left: 0;
+        background-color: $color;
+        height: 1px;
+    }
+}
+
