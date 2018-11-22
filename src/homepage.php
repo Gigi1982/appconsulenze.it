@@ -31,11 +31,46 @@
                 <div class="col-md-6">
                     <div class="app-module-item">
                         <header class="app-module-itemheader">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/_backoffice/img-module.jpg">
+                            <?php
+                                $missionThumb = get_the_post_thumbnail($missionId);
+                                if($missionThumb): 
+                            ?>
+                            <img src="<?php echo get_the_post_thumbnail_url($missionId); ?>">
+                            <?php else: ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/main-pattern.jpg">
+                            <?php endif; ?>
                         </header>
                         <div class="app-module-itemcontent">
                             <h2><?php echo get_the_title($missionId); ?></h2>
                             <div><?php echo get_excerpt_by_id($missionId); ?></div>
+                            <div class="app-module-button pt-4">
+                                <a href="<?php echo get_the_permalink($missionId); ?>" class="btn btn-primary btn-sm">LEGGI TUTTO</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php 
+                $sicurezzaId = get_page_by_path( 'sicurezza' );
+                //echo $postId; 
+                ?>
+                <div class="col-md-6">
+                    <div class="app-module-item">
+                        <header class="app-module-itemheader">
+                            <?php
+                                $sicurezzaThumb = get_the_post_thumbnail($sicurezzaId);
+                                if($sicurezzaThumb): 
+                            ?>
+                            <img src="<?php echo get_the_post_thumbnail_url($sicurezzaId); ?>">
+                            <?php else: ?>
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/main-pattern.jpg">
+                            <?php endif; ?>
+                        </header>
+                        <div class="app-module-itemcontent">
+                            <h2><?php echo get_the_title($sicurezzaId); ?></h2>
+                            <div><?php echo get_excerpt_by_id($sicurezzaId); ?></div>
+                            <div class="app-module-button pt-4">
+                                <a href="<?php echo get_the_permalink($sicurezzaId); ?>" class="btn btn-primary btn-sm">LEGGI TUTTO</a>
+                            </div>
                         </div>
                     </div>
                 </div>

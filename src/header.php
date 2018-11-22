@@ -33,7 +33,7 @@
                 <div class="container">
                     <nav class="app-navbar-container">
                         <div class="app-full-logo">
-                            <a class="app-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="app-logo"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></a>
                         </div>
                         <div class="app-navbar" id="navbarNavDropdown">
                             <div class="app-logo-compressed"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-compressed.png"></div>

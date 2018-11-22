@@ -28,7 +28,12 @@
             }
         });
         
-        
+        var formazioneSwiper = new Swiper('.app-formazione-gallery', {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
         
 	});
     

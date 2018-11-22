@@ -7307,6 +7307,17 @@ h4, .h4 {
   content: '\e801'; }
 
 /* '' */
+.app-image-container {
+  height: 450px; }
+  .app-image-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.app-gallery-caption {
+  font-size: 0.7222rem;
+  margin-top: 20px; }
+
 .app-navbar-container .app-logo {
   width: 258px;
   height: 93px;
@@ -7447,7 +7458,8 @@ h4, .h4 {
   margin-top: 40px; }
 
 .app-two-modules .app-module-item .app-module-itemheader {
-  position: relative; }
+  position: relative;
+  height: 240px; }
   .app-two-modules .app-module-item .app-module-itemheader > img {
     width: 100%;
     height: 100%;
@@ -7474,6 +7486,9 @@ h4, .h4 {
   .app-cta-block .app-cta-inner {
     text-align: center;
     color: #fff; }
+
+.app-full-column .app-full-content {
+  margin-top: 20px; }
 
 .app-full-column .app-module-itemimg {
   position: relative;

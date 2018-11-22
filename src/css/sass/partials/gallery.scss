@@ -1,0 +1,11 @@
+.app-image-container {
+    height: 450px;
+    > img {
+        @include cover-media;    
+    }
+}
+
+.app-gallery-caption {
+    font-size: 0.7222rem;
+    margin-top: 20px;
+}
