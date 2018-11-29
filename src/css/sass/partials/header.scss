@@ -33,6 +33,7 @@
         z-index: 2;
         background: #fff;
         padding:25px 0;
+        box-shadow: 1px 4px 25px -2px rgba(0,0,0,0.18);
         .app-full-logo {
             opacity: 0;
             display: none;
@@ -52,6 +53,7 @@
     }
     .navbar-nav {
         > li {
+            position: relative;
             &.current-menu-item {
                 > a {
                     color:$primary;
@@ -63,6 +65,37 @@
                 text-transform: uppercase;
                 color:$body;
                 font-size: 0.8889rem;
+            }
+            .sub-menu {
+                position: absolute;
+                top: 25px;
+                left: -40px;
+                right: -40px;
+                list-style-type: none;
+                margin: 0;
+                padding-bottom: 10px;
+                padding: 0;
+                background: #fff;
+                min-width: 100%;
+                overflow: visible;
+                opacity: 0;
+                pointer-events: none;
+                box-shadow: 1px 4px 25px -2px rgba(0,0,0,0.18);
+                > li {
+                    > a {
+                        font-size: 0.6667rem;
+                        padding:12px 15px;
+                        text-transform: uppercase;
+                        display: block;
+                        font-weight: 500;
+                    }
+                }
+            }
+            &:hover {
+                .sub-menu {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
             }
         }
     }

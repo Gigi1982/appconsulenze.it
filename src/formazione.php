@@ -83,6 +83,7 @@
                             <?php if($bloccoTesto): 
                             foreach($bloccoTesto as $blocco): ?>
                             <div class="module-section module-padding">
+                                <?php if($blocco['immagine']): ?>
                                 <div class="row">
                                     <div class="col-12">
                                         <header class="app-module-itemimg">
@@ -90,6 +91,7 @@
                                         </header>
                                     </div>
                                 </div>
+                                <?php endif; ?>
                                 <div class="row">
                                     <div class="col-12 col-md-10 offset-md-1">
                                         <div class="app-module-itemcontent">
